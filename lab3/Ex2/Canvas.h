@@ -12,6 +12,7 @@ public:
 
     Canvas(int width, int height);
 
+
     void DrawCircle(int x, int y, int ray, char ch);
 
     void FillCircle(int x, int y, int ray, char ch);

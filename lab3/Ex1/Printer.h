@@ -3,6 +3,7 @@
 class Printer
 {
 public:
+
     static void PrintAdd(int, int);//prints the sum of ints as int
     static void PrintAdd(int, int, int);//prints the sum of ints as int
     static void PrintAdd(double, double); //prints the sum of doubles as double

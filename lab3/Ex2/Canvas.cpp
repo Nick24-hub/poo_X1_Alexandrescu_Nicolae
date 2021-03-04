@@ -17,6 +17,7 @@ Canvas::Canvas(int width, int height)
 void Canvas::DrawCircle(int x, int y, int ray, char ch)
 {
 	int i, j;
+
 	for (i = 0; i < height; i++)
 	{
 		for (j = 0; j < width; j++)
