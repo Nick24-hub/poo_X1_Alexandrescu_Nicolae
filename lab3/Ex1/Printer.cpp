@@ -76,5 +76,5 @@ void Printer::PrintAdd(const char* a, const char* b)
 	strcpy(aux, a);
 	strcat(aux, b);
 	printf("%s\n", aux);
-	delete aux;
+	delete[] aux;
 }
