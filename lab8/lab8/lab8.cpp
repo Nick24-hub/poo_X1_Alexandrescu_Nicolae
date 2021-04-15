@@ -11,27 +11,29 @@ int main()
 	int i, note[20], j, nrNote;
 	Student x;
 	string str, materie;
+
 	while (getline(fin, str)) {
-		i = 0;
 		j = 0;
 		nrNote = 0;
 		materie = "";
-		while (str[i] != ' ')
+		auto it = str.begin();
+
+		while (*it != ' ' && it != str.end())
 		{
-			materie += str[i];
-			i++;
+			materie += *it;
+			it++;
 		}
-		i++;
-		while (str[i] != '\n')
+
+		while (it != str.end())
 		{
-			if (str[i] >= '0' && str[i] <= '9')
-				note[j++] = str[i] - '0';
-			i++;
+			if (*it >= '0' && *it <= '9')
+				note[j++] = *it - '0';
+			it++;
 		}
 		nrNote = j;
 		for (j = 0;j < nrNote;++j)
 			x.AdaugaNota(materie, note[j]);
 	}
-
+	x.PrinteazaNote();
 }
 

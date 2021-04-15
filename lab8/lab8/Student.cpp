@@ -12,7 +12,7 @@ void Student::PrinteazaNote()
 {
 	for (auto it = catalog.begin(); it != catalog.end(); ++it)
 	{
-		for (auto i = 0;i < nrNote[it->first];++i)
+		for (int i = 0;i < nrNote[it->first];++i)
 			cout << it->first << " " << catalog[it->first][i] << '\n';
 	}
 }
